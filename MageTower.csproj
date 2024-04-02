@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="img\createCharBackground.jpg" />
+    <None Remove="img\titleScreen.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="textures\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="XAMLMarkupExtensions" Version="2.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\createCharBackground.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\titleScreen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
